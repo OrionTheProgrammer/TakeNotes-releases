@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anotaciones de Lyrics · Take Notes</title>
+  <meta name="description" content="Aprende a escribir indicaciones entre corchetes en Take Notes, sincronizar solo lo que se canta y exportar tu letra a LRC.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script>try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch {}</script>
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" width="32" height="32" alt=""><span>Take Notes</span></a>
+    <nav aria-label="Secciones"><a href="index.html#funciones">Funciones</a><a href="lyrics.html" aria-current="page">Guía de Lyrics</a></nav>
+    <div class="top-actions"><a class="button dark small" href="index.html#descargar">Descargar</a></div>
+  </header>
+  <main class="guide">
+    <p class="eyebrow">Guía práctica · Disponible también en Configuración › Ayuda</p>
+<h1>Anotaciones de Lyrics</h1>
+<p>Las anotaciones son indicaciones para ti: se guardan en la nota, pero no forman parte de lo que se canta. Usa corchetes simples, como <strong>[verso]</strong>, <strong>[coro x2]</strong>, <strong>[suave]</strong> o <strong>[respirar]</strong>.</p>
+<h2>Preparar la letra</h2>
+<ul>
+<li>Abre una nota y activa <strong>Lyrics</strong> con el botón de la nota musical en la barra del editor.</li>
+<li>Escribe cada línea que se canta en un párrafo distinto, pulsando <strong>Enter</strong> al terminarla.</li>
+<li>Escribe una indicación sola, por ejemplo <strong>[verso]</strong>, en su propio párrafo; también puedes añadirla dentro de una línea, como <strong>Vuelvo a casa [suave]</strong>.</li>
+<li>Adjunta una canción desde <strong>⋯ › Adjuntar o cambiar la canción…</strong> si quieres. Sin audio puedes usar el reloj interno.</li>
+</ul>
+<h2>Qué se ve y qué se escucha</h2>
+<div class="guide-table"><table><thead><tr><th scope="col">Lo que escribes en la nota</th><th scope="col">Lo que aparece al reproducir</th></tr></thead><tbody>
+<tr><td>[verso]</td><td>Se omite toda la línea.</td></tr>
+<tr><td>Vuelvo a casa [suave]</td><td>Vuelvo a casa</td></tr>
+<tr><td>Una [respirar] vez más</td><td>Una vez más</td></tr>
+<tr><td>[coro x2] [fuerte]</td><td>Se omite toda la línea.</td></tr>
+</tbody></table></div>
+<p>En el editor, las anotaciones se ven más suaves cuando Lyrics está activo. El texto original permanece en la nota y puedes editarlo o quitar los corchetes para que vuelva a cantarse.</p>
+<h2>Sincronizar sin marcar las indicaciones</h2>
+<ul>
+<li>Activa <strong>Sincronizar</strong> y pulsa <strong>Marcar</strong> o <strong>Espacio</strong> cuando empiece cada línea cantada. Si estás escribiendo en el editor, pulsa primero Marcar para pasar al control de sincronización.</li>
+<li>Las líneas que contienen solo anotaciones se saltan y no reciben tiempo. En una línea mixta se sincroniza el texto cantado.</li>
+<li>Sin canción, la primera marca arranca el reloj interno. Puedes pausar o corregir el tiempo pulsando el tiempo de cada línea.</li>
+<li>Abre <strong>Letra</strong> para comprobar el resultado: las indicaciones no se muestran. Al exportar desde <strong>⋯ › Exportar letra (LRC)…</strong>, tampoco se incluyen.</li>
+</ul>
+<h2>Detalles que conviene conocer</h2>
+<ul>
+<li><strong>[coro x2]</strong> es una indicación escrita: no repite la canción ni las líneas automáticamente. Para cantar un coro dos veces, escribe y sincroniza sus dos apariciones.</li>
+<li>Cierra los corchetes en la misma línea: <strong>[suave]</strong>. Un corchete sin cerrar se conserva como texto normal. Evita anidar corchetes.</li>
+<li>Usa un solo par de corchetes para las anotaciones. <strong>[[</strong> abre el buscador de enlaces entre notas.</li>
+<li>Una anotación como <strong>[coro]</strong> no equivale a un encabezado de sección: la anotación se oculta al reproducir; las secciones se gestionan con los títulos y el selector de sección de Lyrics.</li>
+<li>Las anotaciones siguen guardadas en el archivo <strong>.tnm</strong>. La limpieza se aplica al reproductor y al LRC, no borra tus indicaciones del documento.</li>
+</ul>
+    <figure class="stage canvas-dusk"><img class="shot" src="assets/shots/lyrics-annotations-light.webp" width="1040" height="700" alt="Letra en el editor: las indicaciones entre corchetes permanecen en la nota y solo las líneas cantadas aparecen para sincronizar" loading="lazy"><figcaption>Las indicaciones quedan en tu nota; sincroniza únicamente las líneas que vas a cantar.</figcaption></figure>
+    <p><a class="button ghost" href="index.html">Volver a Take Notes <span aria-hidden="true">→</span></a></p>
+  </main>
+  <footer class="footer"><div class="guide"><p>Take Notes · Hecho en Chile · <a href="index.html#descargar">Descargar</a> · <a href="https://ko-fi.com/takenotes">Apoyar en Ko-fi</a></p></div></footer>
+</body>
+</html>
