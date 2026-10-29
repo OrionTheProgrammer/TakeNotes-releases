@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Take Notes · Un lugar tranquilo para tus ideas</title>
+  <meta name="description" content="Take Notes es una app de notas gratuita para Windows, Linux y Android: ideas, listas y letras de canciones sincronizadas en un solo texto que fluye, con carpetas, notas enlazadas y sincronización entre tus equipos.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#F6F3EC" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#18171B" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://oriontheprogrammer.github.io/TakeNotes-releases/">
+  <meta property="og:title" content="Take Notes · Un lugar tranquilo para tus ideas">
+  <meta property="og:description" content="Ideas, listas y letras de canciones sincronizadas en un solo texto que fluye. Gratis para Windows, Linux y Android, con tus notas iguales en todos tus equipos.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://oriontheprogrammer.github.io/TakeNotes-releases/">
+  <meta property="og:image" content="https://oriontheprogrammer.github.io/TakeNotes-releases/assets/og.jpg">
+  <meta property="og:locale" content="es_CL">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="preload" href="assets/fonts/libron-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/libron-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="season.js"></script>
+  <script src="app.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Take Notes",
+    "applicationCategory": "ProductivityApplication",
+    "operatingSystem": "Windows 10, Windows 11, Linux, Android 8+",
+    "description": "App de notas para ideas, listas y letras de canciones sincronizadas, con carpetas, notas enlazadas y sincronización entre equipos.",
+    "inLanguage": ["es", "en", "pt"],
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "author": { "@type": "Person", "name": "Orion" },
+    "url": "https://oriontheprogrammer.github.io/TakeNotes-releases/",
+    "downloadUrl": "https://github.com/OrionTheProgrammer/TakeNotes-releases/releases/latest",
+    "screenshot": "https://oriontheprogrammer.github.io/TakeNotes-releases/assets/shots/library-light.webp"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="top">
+    <a class="brand" href="#" aria-label="Take Notes, inicio">
+      <img class="logo-regular" src="assets/logo.svg" alt="" width="32" height="32">
+      <img class="logo-season" src="assets/logo-halloween.svg" alt="" width="32" height="32">
+      <span>Take Notes</span>
+    </a>
+    <nav aria-label="Secciones">
+      <a href="#funciones">Funciones</a>
+      <a href="ayuda/index.html">Ayuda</a>
+      <a href="ayuda/novedades.html">Novedades</a>
+      <a href="https://ko-fi.com/takenotes">Apoyar</a>
+    </nav>
+    <div class="top-actions">
+      <button class="icon-button" id="theme-toggle" type="button" aria-label="Cambiar entre tema claro y oscuro">
+        <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg>
+      </button>
+      <a class="button dark small" href="#descargar">Descargar <span aria-hidden="true">→</span></a>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero hero-split">
+      <div class="bats" aria-hidden="true">
+        <svg class="bat b1" viewBox="0 0 64 32"><path d="M32 12c2-4 3-6 3-8 1 2 1 4 0 6 6-4 14-6 22-4-4 2-6 6-6 10-4-2-8-2-11 1-2-3-5-4-8-4s-6 1-8 4c-3-3-7-3-11-1 0-4-2-8-6-10 8-2 16 0 22 4-1-2-1-4 0-6 0 2 1 4 3 8z"/></svg>
+        <svg class="bat b2" viewBox="0 0 64 32"><path d="M32 12c2-4 3-6 3-8 1 2 1 4 0 6 6-4 14-6 22-4-4 2-6 6-6 10-4-2-8-2-11 1-2-3-5-4-8-4s-6 1-8 4c-3-3-7-3-11-1 0-4-2-8-6-10 8-2 16 0 22 4-1-2-1-4 0-6 0 2 1 4 3 8z"/></svg>
+        <svg class="bat b3" viewBox="0 0 64 32"><path d="M32 12c2-4 3-6 3-8 1 2 1 4 0 6 6-4 14-6 22-4-4 2-6 6-6 10-4-2-8-2-11 1-2-3-5-4-8-4s-6 1-8 4c-3-3-7-3-11-1 0-4-2-8-6-10 8-2 16 0 22 4-1-2-1-4 0-6 0 2 1 4 3 8z"/></svg>
+      </div>
+      <div class="hero-copy">
+        <p class="kicker reveal">Notas · Listas · Canciones</p>
+        <h1 class="headline" data-words>Un lugar <em>tranquilo</em> para tus ideas</h1>
+        <p class="lead reveal">Tus notas, tus listas y las letras de tus canciones en un solo texto que fluye. En el computador y en el teléfono, iguales en todos tus equipos si quieres. Gratis y sin anuncios.</p>
+        <div class="cta reveal">
+          <a class="button dark" id="primary-download" href="https://github.com/OrionTheProgrammer/TakeNotes-releases/releases/latest/download/TakeNotes-win-Setup.exe">
+            <span id="primary-label">Descargar para Windows</span> <span aria-hidden="true">→</span>
+          </a>
+          <a class="button ghost" id="secondary-download" href="https://github.com/OrionTheProgrammer/TakeNotes-releases/releases/latest/download/TakeNotes.AppImage">También para Linux</a>
+        </div>
+        <p class="meta reveal" id="release-meta">Windows, Linux y Android · se actualiza sola</p>
+      </div>
+      <!-- The computer and the phone, the phone resting on the computer's corner. -->
+      <div class="devices reveal" aria-label="Take Notes en el computador y en el teléfono">
+        <figure class="device desktop">
+          <img class="theme-light season-hide" src="assets/shots/covers-light.webp" width="1280" height="800" alt="La biblioteca de Take Notes: barra de íconos, carpetas de colores, saludo y tarjetas de notas con portada">
+          <img class="theme-dark season-hide" src="assets/shots/library-dark.webp" width="1280" height="800" alt="La biblioteca de Take Notes en tema oscuro">
+          <img class="season-only" src="assets/shots/halloween-dark.webp" width="1280" height="800" alt="La biblioteca de Take Notes vestida de Halloween">
+        </figure>
+        <figure class="device phone">
+          <img class="season-hide" src="assets/shots/phone-library-light.webp" width="412" height="915" alt="Mis notas en el teléfono, con la barra inferior y una nota con portada">
+          <img class="season-only" src="assets/shots/phone-halloween-dark.webp" width="412" height="915" alt="Mis notas en el teléfono con el tema de Halloween">
+        </figure>
+      </div>
+    </section>
+
+    <ul class="ribbon reveal" aria-label="En pocas palabras">
+      <li><span class="dot" style="--tone:#6F9A82"></span>Gratis y sin anuncios</li>
+      <li><span class="dot" style="--tone:#C47A5A"></span>Tus notas son archivos tuyos</li>
+      <li><span class="dot" style="--tone:#8F84BF"></span>Funciona sin conexión</li>
+      <li><span class="dot" style="--tone:#6F98AA"></span>Windows, Linux y Android</li>
+    </ul>
+
+    <section class="bento-section" id="funciones">
+      <div class="section-head reveal">
+        <p class="kicker">Funciones</p>
+        <h2>Todo en su lugar</h2>
+        <p>Lo que esperas de un procesador de textos, con la calma de una libreta. Nada que distraiga de lo que estás escribiendo.</p>
+      </div>
+      <div class="bento">
+        <article class="tile tile-wide reveal">
+          <div class="tile-copy">
+            <h3>Editor flotante</h3>
+            <p>Escribe encima de tu biblioteca y ciérralo con Esc: la nota se guarda sola. Títulos, tareas, citas, tablas e imágenes, y ortografía en varios idiomas a la vez.</p>
+          </div>
+          <img class="focus-center" src="assets/shots/editor-light.webp" width="1440" height="900" loading="lazy" alt="El editor flotante con un plan de estudio con títulos, tareas enlazadas a otras notas y una cita">
+        </article>
+        <article class="tile reveal">
+          <div class="tile-copy">
+            <h3>Notas enlazadas</h3>
+            <p>Escribe [[ y enlaza otra nota sin soltar el teclado. Si no existe, se crea en el momento.</p>
+          </div>
+          <img class="focus-center" src="assets/shots/links-light.webp" width="1440" height="900" loading="lazy" alt="El menú para enlazar una nota abierto junto al cursor">
+        </article>
+        <article class="tile reveal">
+          <div class="tile-copy">
+            <h3>Carpetas y portadas</h3>
+            <p>Carpetas con su propio color, notas que arrastras a su lugar y portadas para las que quieras distinguir.</p>
+          </div>
+          <img class="focus-left" src="assets/shots/library-light.webp" width="1280" height="800" loading="lazy" alt="La biblioteca con carpetas de colores en el panel lateral">
+        </article>
+        <article class="tile tile-half reveal">
+          <div class="tile-copy">
+            <h3>Lyrics</h3>
+            <p>Convierte cualquier nota en una letra sincronizada: marca cada línea con Espacio mientras suena la canción. Lo que va entre corchetes no se canta.</p>
+            <a class="tile-link" href="ayuda/lyrics.html">Guía de Lyrics <span aria-hidden="true">→</span></a>
+          </div>
+          <img class="focus-center" src="assets/shots/lyrics-annotations-light.webp" width="1440" height="900" loading="lazy" alt="Una letra en el editor con indicaciones entre corchetes y el panel para sincronizar cada línea">
+        </article>
+        <article class="tile tile-half reveal">
+          <div class="tile-copy">
+            <h3>A tu medida</h3>
+            <p>Tema claro u oscuro, colores de acento, español, inglés o portugués, y accesibilidad: tamaño de la interfaz, alto contraste y foco visible.</p>
+          </div>
+          <img class="focus-center" src="assets/shots/accessibility-light.webp" width="1200" height="800" loading="lazy" alt="La sección de accesibilidad de la configuración">
+        </article>
+      </div>
+    </section>
+
+    <!-- In ink, like the app's rail: the lyrics video. -->
+    <section class="ink-band">
+      <div class="ink-inner">
+        <div class="band-copy reveal">
+          <p class="kicker">Nuevo en 1.2</p>
+          <h2>El video de <em>tu letra</em></h2>
+          <p>Elige un fondo para tu letra sincronizada: cinco colores, tu propia foto difuminada o una pantalla verde. Exporta en horizontal, vertical para reels o cuadrado, hasta 4K y a 60 cuadros por segundo, o con fondo transparente para tu editor de video. Se ve igual que la vista de letra.</p>
+          <p><a class="button paper" href="ayuda/video.html">Cómo exportar el video <span aria-hidden="true">→</span></a></p>
+        </div>
+        <div class="frames reveal" aria-hidden="true">
+          <img class="frame main" src="assets/shots/video-atardecer.webp" width="1280" height="720" loading="lazy" alt="">
+          <img class="frame" src="assets/shots/video-medianoche.webp" width="1280" height="720" loading="lazy" alt="">
+          <img class="frame" src="assets/shots/video-verde.webp" width="1280" height="720" loading="lazy" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="band phone-band">
+      <figure class="phones reveal" aria-label="Take Notes en el teléfono">
+        <img class="phone season-hide" src="assets/shots/phone-library-light.webp" width="412" height="915" loading="lazy" alt="Mis notas en el teléfono, con carpetas de colores y una nota con portada">
+        <img class="phone season-only" src="assets/shots/phone-halloween-dark.webp" width="412" height="915" loading="lazy" alt="Mis notas en el teléfono con el tema de Halloween">
+        <img class="phone" src="assets/shots/phone-editor-light.webp" width="412" height="915" loading="lazy" alt="Una nota abierta en el teléfono con la barra de formato sobre el teclado">
+      </figure>
+      <div class="band-copy reveal">
+        <p class="kicker">Computador y teléfono</p>
+        <h2>Tus notas, en <em>todos</em> tus equipos</h2>
+        <p>La app para Android tiene el mismo papel y la misma calma, pensada para el dedo, y pesa unos 22 MB. Activa la sincronización y tus notas, carpetas y canciones quedan iguales en el computador y en el teléfono.</p>
+        <p>Si una nota cambia en dos lugares a la vez, se guardan las dos versiones. La sincronización viene apagada: tus notas salen de tu equipo solo si tú lo decides.</p>
+        <p><a class="button ghost" href="ayuda/sincronizacion.html">Cómo sincronizar <span aria-hidden="true">→</span></a></p>
+      </div>
+    </section>
+
+    <section class="values" id="escribir">
+      <h2 class="reveal">Escribe a tu manera</h2>
+      <div class="value-grid">
+        <article class="reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7V5h16v2M9 19h6M12 5v14"/></svg>
+          <h3>Formato mientras escribes</h3>
+          <p>«# » para un título, «- » para una lista, **negrita** y *cursiva* sin soltar el teclado. Comillas, rayas y puntos suspensivos tipográficos, modo máquina de escribir y meta de palabras.</p>
+        </article>
+        <article class="reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v3M8 10h.01M16 10h.01M5 7h14a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2zM9 15h6"/></svg>
+          <h3>Con tus asistentes de IA</h3>
+          <p>Claude Code, Codex, opencode y otros pueden buscar en tus notas y dejarte notas nuevas, desde la terminal o tu editor. Todo pasa en tu equipo, y tú decides qué pueden hacer.</p>
+          <a class="tile-link" href="ayuda/asistentes.html">Cómo conectarlos <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8zM7.5 7.5h.01"/></svg>
+          <h3>Etiquetas y exportación</h3>
+          <p>Etiqueta tus notas y encuéntralas buscando #etiqueta. Exporta a un PDF o un Word con el estilo de tu nota, o a una página web lista para compartir.</p>
+        </article>
+      </div>
+      <p class="experimental-note reveal">¿Quieres probar lo nuevo antes que nadie, como las presentaciones? Pide entrar al programa experimental en <strong>Configuración › Experimental</strong>.</p>
+    </section>
+
+    <section class="values">
+      <h2 class="reveal">Lo que nos importa</h2>
+      <div class="value-grid">
+        <article class="reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          <h3>Gratis, sin anuncios</h3>
+          <p>Take Notes no vende tus datos ni te muestra publicidad. Lo sostienen las personas que lo apoyan.</p>
+        </article>
+        <article class="reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8zM14 3v5h5M9 13h6M9 17h4"/></svg>
+          <h3>Tus notas son tuyas</h3>
+          <p>Funciona sin conexión y guarda cada nota como un archivo en tu equipo. Sincroniza solo si quieres y exporta a Word, PDF, página web o Markdown cuando lo necesites.</p>
+        </article>
+        <article class="reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7L21 8M21 3v5h-5"/></svg>
+          <h3>Liviano y siempre al día</h3>
+          <p>Abres y escribes. Las actualizaciones llegan solas, con sus novedades, también en el teléfono.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="download" id="descargar">
+      <div class="section-head center reveal">
+        <h2>Descarga Take Notes</h2>
+        <p>Gratis para Windows, Linux y Android. Se actualiza solo.</p>
+      </div>
+      <div class="cards">
+        <article class="card reveal" data-os="windows">
+          <svg class="os" aria-hidden="true" viewBox="0 0 24 24"><path d="M3 5.5 10 4.5v7H3zM11 4.4 21 3v8.5H11zM3 12.5h7v7l-7-1zM11 12.5h10V21l-10-1.4z"/></svg>
+          <h3>Windows</h3>
+          <p class="small">Windows 10 u 11, 64 bits</p>
+          <a class="button dark" href="https://github.com/OrionTheProgrammer/TakeNotes-releases/releases/latest/download/TakeNotes-win-Setup.exe">Descargar instalador</a>
+          <a class="alt" href="https://github.com/OrionTheProgrammer/TakeNotes-releases/releases/latest/download/TakeNotes-win-Portable.zip">Versión portable (.zip)</a>
+          <details>
+            <summary>¿Windows muestra una advertencia?</summary>
+            <p>Como Take Notes es nuevo, Windows puede mostrar «Windows protegió su PC». Pulsa <strong>Más información</strong> y luego <strong>Ejecutar de todas formas</strong>.</p>
+          </details>
+        </article>
+        <article class="card reveal" data-os="linux">
+          <svg class="os" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2c-2.2 0-3.5 1.9-3.5 4.4 0 1.5.4 2.4-.6 4C6.6 12.4 5 14.6 5 17c0 .9.3 1.6.8 2.1-.6.5-.9 1.1-.6 1.6.5.9 2.4.6 3.6 1 1 .3 2 .3 2.6-.3h1.2c.6.6 1.6.6 2.6.3 1.2-.4 3.1-.1 3.6-1 .3-.5 0-1.1-.6-1.6.5-.5.8-1.2.8-2.1 0-2.4-1.6-4.6-2.9-6.6-1-1.6-.6-2.5-.6-4C15.5 3.9 14.2 2 12 2z"/></svg>
+          <h3>Linux</h3>
+          <p class="small">Cualquier distribución de 64 bits. Instala con un comando, sin sudo:</p>
+          <div class="command">
+            <code id="install-command">curl -fsSL https://oriontheprogrammer.github.io/TakeNotes-releases/install.sh | sh</code>
+            <button class="copy" type="button" data-copy="install-command" aria-label="Copiar el comando">Copiar</button>
+          </div>
+          <a class="alt" href="https://github.com/OrionTheProgrammer/TakeNotes-releases/releases/latest/download/TakeNotes.AppImage">O descarga la AppImage</a>
+          <details>
+            <summary>¿Qué hace el comando?</summary>
+            <p>Descarga Take Notes en tu carpeta personal, lo agrega al menú de aplicaciones y crea el comando <code>takenotes</code>. Se sigue actualizando solo. Para quitarlo, agrega <code>-s -- --uninstall</code> al final: tus notas no se tocan.</p>
+            <p>Con la AppImage: dale permiso de ejecución y ábrela con doble clic, o <code>chmod +x TakeNotes.AppImage</code>.</p>
+          </details>
+        </article>
+        <article class="card reveal" data-os="android">
+          <svg class="os" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 3.5 8.3 5.6A8 8 0 0 1 12 4.7a8 8 0 0 1 3.7.9L17 3.5M5 10a7 7 0 0 1 14 0v.5H5zM5 12h14v6.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 18.5z"/></svg>
+          <h3>Android</h3>
+          <p class="small">Android 8 o más nuevo · en Google Play</p>
+          <a class="button dark" href="https://play.google.com/store/apps/details?id=app.takenotes.android" rel="noopener">Descargar en Google Play</a>
+          <details>
+            <summary>¿Ya la tenías instalada desde esta página?</summary>
+            <p>Instala la versión de Google Play encima: no hace falta desinstalar y tus notas se quedan. Desde ahí, Google Play la mantiene al día.</p>
+          </details>
+        </article>
+      </div>
+      <p class="small center download-links"><a href="ayuda/novedades.html" id="changelog-link">Novedades de cada versión</a> · <a href="ayuda/primeros-pasos.html">Primeros pasos</a> · <a href="https://github.com/OrionTheProgrammer/TakeNotes-releases/releases">Versiones anteriores</a></p>
+    </section>
+
+    <section class="help-teaser">
+      <div class="section-head center reveal">
+        <h2>¿Necesitas una mano?</h2>
+        <p>El centro de ayuda explica todo lo que hace Take Notes, paso a paso.</p>
+      </div>
+      <div class="help-cards reveal">
+        <a class="help-card" href="ayuda/primeros-pasos.html"><strong>Primeros pasos</strong><span>Instala Take Notes y escribe tu primera nota.</span></a>
+        <a class="help-card" href="ayuda/lyrics.html"><strong>Lyrics</strong><span>Sincroniza tu letra con la canción y usa anotaciones.</span></a>
+        <a class="help-card" href="ayuda/sincronizacion.html"><strong>Cuenta y sincronización</strong><span>Las mismas notas en el computador y en el teléfono.</span></a>
+        <a class="help-card" href="ayuda/preguntas.html"><strong>Preguntas frecuentes</strong><span>Dónde están tus notas, el formato .tnm y más.</span></a>
+      </div>
+    </section>
+
+    <section class="support reveal">
+      <img src="assets/kofi.svg" alt="" width="56" height="56">
+      <div>
+        <h2>Hecho por una persona, desde Chile</h2>
+        <p>Take Notes es gratis y lo desarrollo yo solo. Cada café ayuda a pagar el servidor y me da tiempo para seguir mejorándolo. Si donas con el correo de tu cuenta, recibes una insignia en la app.</p>
+        <a class="button ghost" href="https://ko-fi.com/takenotes">Invítame un café en Ko-fi <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-hero">
+        <h2>Take Notes</h2>
+        <p>Un lugar tranquilo para tus ideas, tus listas y tus canciones.</p>
+        <a class="button paper" href="#descargar">Descargar <span aria-hidden="true">→</span></a>
+      </div>
+      <nav class="footer-links" aria-label="Enlaces">
+        <div>
+          <h3>Take Notes</h3>
+          <a href="#funciones">Funciones</a>
+          <a href="#descargar">Descargar</a>
+          <a href="ayuda/novedades.html">Novedades</a>
+          <a href="ayuda/telefono.html">En el teléfono</a>
+        </div>
+        <div>
+          <h3>Ayuda</h3>
+          <a href="ayuda/index.html">Centro de ayuda</a>
+          <a href="ayuda/primeros-pasos.html">Primeros pasos</a>
+          <a href="ayuda/atajos.html">Atajos de teclado</a>
+          <a href="ayuda/preguntas.html">Preguntas frecuentes</a>
+        </div>
+        <div>
+          <h3>Comunidad</h3>
+          <a href="https://ko-fi.com/takenotes">Apoyar en Ko-fi</a>
+          <a href="mailto:oriontheprogrammer@gmail.com">Contacto</a>
+        </div>
+        <div>
+          <h3>Legal</h3>
+          <a href="https://takenotes-api.fly.dev/terminos">Términos y condiciones</a>
+          <a href="https://takenotes-api.fly.dev/privacidad">Política de privacidad</a>
+        </div>
+      </nav>
+      <p class="footer-note">© 2026 Orion · Hecho con cariño en Chile · Tipografía Libron (SIL Open Font License)</p>
+    </div>
+  </footer>
+</body>
+</html>

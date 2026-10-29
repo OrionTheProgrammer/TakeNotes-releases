@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asistentes de IA · Ayuda de Take Notes</title>
+  <meta name="description" content="Deja que Claude Code, Codex, opencode u otros asistentes lean y escriban tus notas.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://oriontheprogrammer.github.io/TakeNotes-releases/ayuda/asistentes.html">
+  <meta property="og:title" content="Asistentes de IA · Ayuda de Take Notes">
+  <meta property="og:description" content="Deja que Claude Code, Codex, opencode u otros asistentes lean y escriban tus notas.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://oriontheprogrammer.github.io/TakeNotes-releases/assets/og.jpg">
+  <link rel="icon" href="../assets/favicon.png">
+  <link rel="preload" href="../assets/fonts/libron-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../season.js"></script>
+  <script src="../app.js" defer></script>
+</head>
+<body class="docs-page">
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="top">
+    <a class="brand" href="../index.html" aria-label="Take Notes, inicio">
+      <img class="logo-regular" src="../assets/logo.svg" alt="" width="32" height="32">
+      <img class="logo-season" src="../assets/logo-halloween.svg" alt="" width="32" height="32">
+      <span>Take Notes</span>
+    </a>
+    <nav aria-label="Secciones">
+      <a href="../index.html#funciones">Funciones</a>
+      <a href="index.html" aria-current="page">Ayuda</a>
+      <a href="novedades.html">Novedades</a>
+      <a href="https://ko-fi.com/takenotes">Apoyar</a>
+    </nav>
+    <div class="top-actions">
+      <button class="icon-button" id="theme-toggle" type="button" aria-label="Cambiar entre tema claro y oscuro">
+        <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg>
+      </button>
+      <a class="button dark small" href="../index.html#descargar">Descargar</a>
+    </div>
+  </header>
+  <div class="docs">
+      <nav class="docs-nav" aria-label="Temas de ayuda">
+        <details open>
+          <summary>Temas de ayuda</summary>
+          <a href="index.html">Centro de ayuda</a>
+          <a href="primeros-pasos.html">Primeros pasos</a>
+          <a href="escribir.html">Escribir y dar formato</a>
+          <a href="organizar.html">Organizar tus notas</a>
+          <a href="lyrics.html">Lyrics</a>
+          <a href="video.html">El video de tu letra</a>
+          <a href="sincronizacion.html">Cuenta y sincronización</a>
+          <a href="telefono.html">Take Notes en el teléfono</a>
+          <a href="atajos.html">Atajos de teclado</a>
+          <a href="personalizar.html">Personalizar</a>
+          <a href="asistentes.html" aria-current="page">Asistentes de IA</a>
+          <a href="preguntas.html">Preguntas frecuentes</a>
+          <a href="novedades.html">Novedades</a>
+        </details>
+      </nav>
+      <main class="docs-body" id="contenido">
+        <p class="crumbs"><a href="index.html">Ayuda</a> <span aria-hidden="true">›</span> Asistentes de IA</p>
+        <article class="prose">
+<h1>Asistentes de IA</h1>
+<p>Si usas un asistente de IA en la terminal o en tu editor, puedes dejar que trabaje con tus notas: que busque lo que escribiste, te resuma una nota o te deje una nota nueva con lo que hizo. Funciona con Claude Code, Codex, opencode y cualquier asistente que acepte servidores MCP.</p>
+<p>Todo pasa en tu computador. Take Notes no envía tus notas a ningún servidor para esto. El asistente sí puede enviar lo que lee a su propio servicio, según sus condiciones.</p>
+<h2 id="activarlo"><a class="anchor" href="#activarlo" aria-hidden="true" tabindex="-1">#</a>Activarlo</h2>
+<ol><li>Abre <strong>Configuración › Asistentes de IA</strong>.</li><li>Activa <strong>Permitir asistentes</strong>.</li><li>Si quieres que solo lean, apaga <strong>Pueden crear y editar notas</strong>.</li><li>Si quieres que también puedan borrar, activa <strong>Pueden borrar notas</strong>. Viene apagado.</li></ol>
+<p>Viene apagado. Si lo apagas, los asistentes que ya estaban conectados dejan de ver tus notas en ese momento.</p>
+<h2 id="conectar-un-asistente"><a class="anchor" href="#conectar-un-asistente" aria-hidden="true" tabindex="-1">#</a>Conectar un asistente</h2>
+<p>En la misma pantalla está lo que tienes que copiar para cada asistente, con la ruta de tu equipo ya puesta. Usa <strong>Copiar</strong> y pégalo donde se indica:</p>
+<ul><li><strong>Claude Code</strong> y <strong>Codex</strong>: en una terminal.</li><li><strong>opencode</strong>: en su archivo <code>opencode.json</code>, dentro de <code>mcp</code>.</li><li><strong>Otros asistentes</strong>: en su configuración de servidores MCP.</li></ul>
+<p>Después, pídele cosas como «busca en mis notas lo que escribí sobre el examen» o «deja en Take Notes una nota con el resumen de lo que hicimos hoy».</p>
+<h2 id="que-puede-hacer-y-que-no"><a class="anchor" href="#que-puede-hacer-y-que-no" aria-hidden="true" tabindex="-1">#</a>Qué puede hacer y qué no</h2>
+<ul><li>Buscar, listar y leer tus notas y carpetas, también por etiqueta.</li><li>Crear notas y carpetas, agregar texto al final de una nota y cambiar sus etiquetas.</li><li>Reescribir una nota. La versión anterior queda en la <strong>papelera</strong>, desde donde la puedes restaurar.</li><li>Borrar una nota, solo si activaste <strong>Pueden borrar notas</strong>. Se borra <strong>para siempre</strong>: no pasa por la papelera y, si sincronizas, también desaparece de tus otros equipos.</li><li>No reescribe notas con imágenes, tablas o una canción, para que no se pierdan. A esas solo les puede agregar texto.</li></ul>
+<p>Cada nota que un asistente cambia recuerda quién fue: en <strong>⋯ › Detalles de la nota</strong> ves, por ejemplo, «Claude Code agregó texto» con la fecha.</p>
+<p>Si la nota que el asistente cambia está abierta y no la estás editando, ves lo nuevo al instante. Si la estabas editando, se queda tu versión y la del asistente va a la papelera.</p>
+
+        </article>
+        <nav class="pager" aria-label="Más temas"><a class="prev" href="personalizar.html"><span>Anterior</span>Personalizar</a><a class="next" href="preguntas.html"><span>Siguiente</span>Preguntas frecuentes</a></nav>
+      </main>
+      <aside class="docs-toc" aria-label="En esta página"><p class="eyebrow">En esta página</p><ol><li><a href="#activarlo">Activarlo</a></li><li><a href="#conectar-un-asistente">Conectar un asistente</a></li><li><a href="#que-puede-hacer-y-que-no">Qué puede hacer y qué no</a></li></ol></aside>
+  </div>
+  <footer class="footer docs-footer">
+    <div class="footer-inner slim">
+      <p>¿No encontraste lo que buscabas? Escríbeme a <a href="mailto:oriontheprogrammer@gmail.com">oriontheprogrammer@gmail.com</a>.</p>
+      <p class="footer-note">© 2026 Orion · Hecho en Chile · <a href="../index.html#descargar">Descargar</a> · <a href="https://ko-fi.com/takenotes">Apoyar en Ko-fi</a> · <a href="https://takenotes-api.fly.dev/privacidad">Privacidad</a></p>
+    </div>
+  </footer>
+</body>
+</html>

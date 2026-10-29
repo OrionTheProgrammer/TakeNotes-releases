@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="night" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3B2856"/><stop offset="1" stop-color="#1C1527"/></linearGradient>
+    <linearGradient id="pumpkin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7A443"/><stop offset="1" stop-color="#E06A1E"/></linearGradient>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="116" fill="url(#night)"/>
+  <g fill="#E9DFC9" opacity=".7"><circle cx="86" cy="98" r="6"/><circle cx="114" cy="392" r="4"/><circle cx="416" cy="398" r="6"/></g>
+  <path d="M330 72c14-30 44-40 66-30-18 4-40 18-50 42z" fill="#6E9A3E"/>
+  <path d="M342 64c22-16 52-14 70 6-26 8-48 8-70-6z" fill="#7BB04A"/>
+  <path d="M176 104h134l60 60v214a26 26 0 0 1-26 26H176a26 26 0 0 1-26-26V130a26 26 0 0 1 26-26z" fill="url(#pumpkin)"/>
+  <path d="M310 104v40a20 20 0 0 0 20 20h40z" fill="#B8501A"/>
+  <g fill="#3A1F2E">
+    <path d="M196 252l40-38 14 46z"/>
+    <path d="M326 252l-40-38-14 46z"/>
+    <path d="M194 300c22 52 112 52 134 0l-20 14-14-18-16 20-17-20-17 20-16-20-14 18z"/>
+  </g>
+</svg>
